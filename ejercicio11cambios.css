@@ -1,0 +1,44 @@
+h1{
+font-size:large;
+}
+h2{
+    font-size:large;
+    }
+div.div1 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    font-size: large;
+   }
+   
+   @keyframes example1 {
+    0% {background-color: red; left:0px;}
+    50% {background-color: yellow; left:200px;}
+    100% {background-color: red; left:0px;}
+    75% {background-color: yellow; left:200px; top:0px;}
+    25% {background-color: blue; left:0px; top:200px;}
+   }
+   
+   div.div2 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-size: large;
+   }
+   
+   @keyframes example2 {
+    0% {background-color: red; left:0px; top:0px;}
+    25% {background-color: blue; left:0px; top:200px;}
+    50% {background-color: green; left:200px; top:200px;}
+    75% {background-color: yellow; left:200px; top:0px;}
+    100% {background-color: red; left:0px; top:0px;}
+   }
